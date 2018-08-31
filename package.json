@@ -1,0 +1,13 @@
+{
+  "name": "ircra",
+  "version": "1.0.0",
+  "description": "IRCRA Climbing Grade Conversion Utility",
+  "main": "index.js",
+  "repository": "git@github.com:wulfmann/ircra.git",
+  "author": "Joe Snell <joepsnell@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+	"prepublish": "tsc"
+  }
+}
