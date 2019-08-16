@@ -1,5 +1,9 @@
 # IRCRA
 
+## WARNING
+
+Some grade types do not match 1:1 with other grade types during conversion. Currently the first found match is returned.
+
 ## Supported Grade Systems
 
 Gender, Vermin, Font, IRCRA, YDS, French/Sport, British, Tech, Ewbank, BRZ, UIAA, Metric UIAA, Watts
@@ -77,6 +81,6 @@ It will then return an object with the new gradeSystem value.
 
 Since this package loads the climbing grade version directly at runtime, attempts are made to make the queries / conversions more efficient.
 
-When you call `.load` with a type. An index (`Map`) is generated in memory, and used for the conversions to other types.
+When you call `.get` with a type. An index (`Map`) is generated in memory, and used for the conversions to other types.
 
-The first `.load` call is benchmarked at around `.2ms`, but subsequent load/conversion calls come in at around `0.002ms`.
+The first `.get` call is benchmarked at around `.2ms`, but subsequent get/convert calls come in at around `0.002ms`.
