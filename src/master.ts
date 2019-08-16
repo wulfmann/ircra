@@ -1,36 +1,35 @@
-
 interface Gender {
-    group: string,
+    group: string
     level: number
 }
 
 interface Grade {
-    male: Gender,
-    female: Gender,
-    vermin: null|string,
-    font: null|string,
-    ircra: number,
-    yds: string,
-    sport: string,
-    british: null|string,
-    tech: null|string,
-    ewbank: number,
-    brz: string,
-    uiaa: string,
-    uiaa_metric: number,
-    watts: null|number,
-    [key:string]:any
+    male: Gender
+    female: Gender
+    vermin: null | string
+    font: null | string
+    ircra: number
+    yds: string
+    sport: string
+    british: null | string
+    tech: null | string
+    ewbank: number
+    brz: string
+    uiaa: string
+    uiaa_metric: number
+    watts: null | number
+    [key: string]: any
 }
 
 export const grades: Array<Grade> = [
     {
         male: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         female: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         vermin: null,
         font: null,
@@ -42,17 +41,17 @@ export const grades: Array<Grade> = [
         ewbank: 4,
         brz: 'I sup',
         uiaa: 'I',
-        uiaa_metric: 1.00,
-        watts: null
+        uiaa_metric: 1.0,
+        watts: null,
     },
     {
         male: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         female: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         vermin: null,
         font: null,
@@ -64,17 +63,17 @@ export const grades: Array<Grade> = [
         ewbank: 6,
         brz: 'II',
         uiaa: 'II',
-        uiaa_metric: 2.00,
-        watts: null
+        uiaa_metric: 2.0,
+        watts: null,
     },
     {
         male: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         female: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         vermin: null,
         font: null,
@@ -86,17 +85,17 @@ export const grades: Array<Grade> = [
         ewbank: 8,
         brz: 'II sup',
         uiaa: 'III',
-        uiaa_metric: 3.00,
-        watts: null
+        uiaa_metric: 3.0,
+        watts: null,
     },
     {
         male: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         female: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         vermin: null,
         font: null,
@@ -109,16 +108,16 @@ export const grades: Array<Grade> = [
         brz: 'III',
         uiaa: 'III+',
         uiaa_metric: 3.5,
-        watts: null
+        watts: null,
     },
     {
         male: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         female: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         vermin: null,
         font: null,
@@ -130,17 +129,17 @@ export const grades: Array<Grade> = [
         ewbank: 10,
         brz: 'IV',
         uiaa: 'IV',
-        uiaa_metric: 4.00,
-        watts: null
+        uiaa_metric: 4.0,
+        watts: null,
     },
     {
         male: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         female: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         vermin: null,
         font: null,
@@ -153,16 +152,16 @@ export const grades: Array<Grade> = [
         brz: 'V',
         uiaa: 'V-',
         uiaa_metric: 4.66,
-        watts: 0.00
+        watts: 0.0,
     },
     {
         male: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         female: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         vermin: null,
         font: null,
@@ -174,17 +173,17 @@ export const grades: Array<Grade> = [
         ewbank: 14,
         brz: 'V',
         uiaa: 'V',
-        uiaa_metric: 5.00,
-        watts: 0.25
+        uiaa_metric: 5.0,
+        watts: 0.25,
     },
     {
         male: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         female: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         vermin: null,
         font: null,
@@ -197,16 +196,16 @@ export const grades: Array<Grade> = [
         brz: 'V sup',
         uiaa: 'V+',
         uiaa_metric: 5.33,
-        watts: 0.50
+        watts: 0.5,
     },
     {
         male: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         female: {
             group: 'Lower',
-            level: 1
+            level: 1,
         },
         vermin: 'VB',
         font: '<2',
@@ -219,18 +218,18 @@ export const grades: Array<Grade> = [
         brz: 'V sup',
         uiaa: 'VI-',
         uiaa_metric: 5.66,
-        watts: 0.75
+        watts: 0.75,
     },
 
     // INTERMEDIATE
     {
         male: {
             group: 'Intermediate',
-            level: 2
+            level: 2,
         },
         female: {
             group: 'Intermediate',
-            level: 2
+            level: 2,
         },
         vermin: null,
         font: null,
@@ -242,17 +241,17 @@ export const grades: Array<Grade> = [
         ewbank: 18,
         brz: 'VI',
         uiaa: 'VI',
-        uiaa_metric: 6.00,
-        watts: 1.00
+        uiaa_metric: 6.0,
+        watts: 1.0,
     },
     {
         male: {
             group: 'Intermediate',
-            level: 2
+            level: 2,
         },
         female: {
             group: 'Intermediate',
-            level: 2
+            level: 2,
         },
         vermin: 'V0-',
         font: '3',
@@ -265,16 +264,16 @@ export const grades: Array<Grade> = [
         brz: 'VI',
         uiaa: 'VI+',
         uiaa_metric: 6.33,
-        watts: 1.25
+        watts: 1.25,
     },
     {
         male: {
             group: 'Intermediate',
-            level: 2
+            level: 2,
         },
         female: {
             group: 'Intermediate',
-            level: 2
+            level: 2,
         },
         vermin: 'V0',
         font: '4',
@@ -287,16 +286,16 @@ export const grades: Array<Grade> = [
         brz: 'VI sup',
         uiaa: 'VII-',
         uiaa_metric: 6.66,
-        watts: 1.50
+        watts: 1.5,
     },
     {
         male: {
             group: 'Intermediate',
-            level: 2
+            level: 2,
         },
         female: {
             group: 'Intermediate',
-            level: 2
+            level: 2,
         },
         vermin: 'V0+',
         font: '4+',
@@ -308,17 +307,17 @@ export const grades: Array<Grade> = [
         ewbank: 20,
         brz: 'VI sup',
         uiaa: 'VII',
-        uiaa_metric: 7.00,
-        watts: 1.75
+        uiaa_metric: 7.0,
+        watts: 1.75,
     },
     {
         male: {
             group: 'Intermediate',
-            level: 2
+            level: 2,
         },
         female: {
             group: 'Intermediate',
-            level: 2
+            level: 2,
         },
         vermin: 'V1',
         font: '5',
@@ -330,17 +329,17 @@ export const grades: Array<Grade> = [
         ewbank: 21,
         brz: '7a',
         uiaa: 'VII',
-        uiaa_metric: 7.00,
-        watts: 2.00
+        uiaa_metric: 7.0,
+        watts: 2.0,
     },
     {
         male: {
             group: 'Intermediate',
-            level: 2
+            level: 2,
         },
         female: {
             group: 'Advanced',
-            level: 3
+            level: 3,
         },
         vermin: 'V2',
         font: '5+',
@@ -353,16 +352,16 @@ export const grades: Array<Grade> = [
         brz: '7b',
         uiaa: 'VIII-',
         uiaa_metric: 7.66,
-        watts: 2.25
+        watts: 2.25,
     },
     {
         male: {
             group: 'Intermediate',
-            level: 2
+            level: 2,
         },
         female: {
             group: 'Advanced',
-            level: 3
+            level: 3,
         },
         vermin: 'V2',
         font: '6a',
@@ -375,16 +374,16 @@ export const grades: Array<Grade> = [
         brz: '7b',
         uiaa: 'VIII-',
         uiaa_metric: 7.66,
-        watts: 2.50
+        watts: 2.5,
     },
     {
         male: {
             group: 'Intermediate',
-            level: 2
+            level: 2,
         },
         female: {
             group: 'Advanced',
-            level: 3
+            level: 3,
         },
         vermin: 'V3',
         font: '6b',
@@ -396,17 +395,17 @@ export const grades: Array<Grade> = [
         ewbank: 23,
         brz: '7c',
         uiaa: 'VIII',
-        uiaa_metric: 8.00,
-        watts: 2.75
+        uiaa_metric: 8.0,
+        watts: 2.75,
     },
     {
         male: {
             group: 'Advanced',
-            level: 3
+            level: 3,
         },
         female: {
             group: 'Advanced',
-            level: 3
+            level: 3,
         },
         vermin: 'V4',
         font: '6b+',
@@ -419,16 +418,16 @@ export const grades: Array<Grade> = [
         brz: '8a',
         uiaa: 'VIII+',
         uiaa_metric: 8.33,
-        watts: 3.00
+        watts: 3.0,
     },
     {
         male: {
             group: 'Advanced',
-            level: 3
+            level: 3,
         },
         female: {
             group: 'Advanced',
-            level: 3
+            level: 3,
         },
         vermin: 'V5',
         font: '6c',
@@ -441,16 +440,16 @@ export const grades: Array<Grade> = [
         brz: '8b',
         uiaa: 'IX-',
         uiaa_metric: 8.66,
-        watts: 3.25
+        watts: 3.25,
     },
     {
         male: {
             group: 'Advanced',
-            level: 3
+            level: 3,
         },
         female: {
             group: 'Advanced',
-            level: 3
+            level: 3,
         },
         vermin: 'V6',
         font: '7a',
@@ -463,16 +462,16 @@ export const grades: Array<Grade> = [
         brz: '8c',
         uiaa: 'IX-',
         uiaa_metric: 8.66,
-        watts: 3.50
+        watts: 3.5,
     },
     {
         male: {
             group: 'Advanced',
-            level: 3
+            level: 3,
         },
         female: {
             group: 'Elite',
-            level: 4
+            level: 4,
         },
         vermin: 'V7',
         font: '7a+',
@@ -484,17 +483,17 @@ export const grades: Array<Grade> = [
         ewbank: 27,
         brz: '9a',
         uiaa: 'IX',
-        uiaa_metric: 9.00,
-        watts: 3.75
+        uiaa_metric: 9.0,
+        watts: 3.75,
     },
     {
         male: {
             group: 'Advanced',
-            level: 3
+            level: 3,
         },
         female: {
             group: 'Elite',
-            level: 4
+            level: 4,
         },
         vermin: 'V8',
         font: '7b',
@@ -507,16 +506,16 @@ export const grades: Array<Grade> = [
         brz: '9b',
         uiaa: 'IX+',
         uiaa_metric: 9.33,
-        watts: 4.00
+        watts: 4.0,
     },
     {
         male: {
             group: 'Advanced',
-            level: 3
+            level: 3,
         },
         female: {
             group: 'Elite',
-            level: 4
+            level: 4,
         },
         vermin: 'V8',
         font: '7b+',
@@ -529,16 +528,16 @@ export const grades: Array<Grade> = [
         brz: '9c',
         uiaa: 'X-',
         uiaa_metric: 9.66,
-        watts: 4.25
+        watts: 4.25,
     },
     {
         male: {
             group: 'Elite',
-            level: 4
+            level: 4,
         },
         female: {
             group: 'Elite',
-            level: 4
+            level: 4,
         },
         vermin: 'V9',
         font: '7c',
@@ -550,17 +549,17 @@ export const grades: Array<Grade> = [
         ewbank: 30,
         brz: '10a',
         uiaa: 'X',
-        uiaa_metric: 10.00,
-        watts: 4.50
+        uiaa_metric: 10.0,
+        watts: 4.5,
     },
     {
         male: {
             group: 'Elite',
-            level: 4
+            level: 4,
         },
         female: {
             group: 'Elite',
-            level: 4
+            level: 4,
         },
         vermin: 'V10',
         font: '7c+',
@@ -572,17 +571,17 @@ export const grades: Array<Grade> = [
         ewbank: 31,
         brz: '10b',
         uiaa: 'X',
-        uiaa_metric: 10.00,
-        watts: 4.75
+        uiaa_metric: 10.0,
+        watts: 4.75,
     },
     {
         male: {
             group: 'Elite',
-            level: 4
+            level: 4,
         },
         female: {
             group: 'Elite',
-            level: 4
+            level: 4,
         },
         vermin: 'V11',
         font: '8a',
@@ -595,16 +594,16 @@ export const grades: Array<Grade> = [
         brz: '10c',
         uiaa: 'X+',
         uiaa_metric: 10.33,
-        watts: 5.00
+        watts: 5.0,
     },
     {
         male: {
             group: 'Elite',
-            level: 4
+            level: 4,
         },
         female: {
             group: 'Higher Elite',
-            level: 5
+            level: 5,
         },
         vermin: 'V12',
         font: '8a+',
@@ -617,16 +616,16 @@ export const grades: Array<Grade> = [
         brz: '11a',
         uiaa: 'XI-',
         uiaa_metric: 10.66,
-        watts: 5.25
+        watts: 5.25,
     },
     {
         male: {
             group: 'Higher Elite',
-            level: 5
+            level: 5,
         },
         female: {
             group: 'Higher Elite',
-            level: 5
+            level: 5,
         },
         vermin: 'V13',
         font: '8b',
@@ -638,17 +637,17 @@ export const grades: Array<Grade> = [
         ewbank: 34,
         brz: '11b',
         uiaa: 'XI',
-        uiaa_metric: 11.00,
-        watts: 5.50
+        uiaa_metric: 11.0,
+        watts: 5.5,
     },
     {
         male: {
             group: 'Higher Elite',
-            level: 5
+            level: 5,
         },
         female: {
             group: 'Higher Elite',
-            level: 5
+            level: 5,
         },
         vermin: 'V14',
         font: '8b+',
@@ -661,16 +660,16 @@ export const grades: Array<Grade> = [
         brz: '11c',
         uiaa: 'XI+',
         uiaa_metric: 11.33,
-        watts: 5.75
+        watts: 5.75,
     },
     {
         male: {
             group: 'Higher Elite',
-            level: 5
+            level: 5,
         },
         female: {
             group: 'Higher Elite',
-            level: 5
+            level: 5,
         },
         vermin: 'V14',
         font: '8b+',
@@ -683,16 +682,16 @@ export const grades: Array<Grade> = [
         brz: '12a',
         uiaa: 'XI+',
         uiaa_metric: 11.33,
-        watts: 6.00
+        watts: 6.0,
     },
     {
         male: {
             group: 'Higher Elite',
-            level: 5
+            level: 5,
         },
         female: {
             group: 'Higher Elite',
-            level: 5
+            level: 5,
         },
         vermin: 'V15',
         font: '8c',
@@ -705,16 +704,16 @@ export const grades: Array<Grade> = [
         brz: '12b',
         uiaa: 'XII-',
         uiaa_metric: 11.66,
-        watts: 6.25
+        watts: 6.25,
     },
     {
         male: {
             group: 'Higher Elite',
-            level: 5
+            level: 5,
         },
         female: {
             group: 'Higher Elite',
-            level: 5
+            level: 5,
         },
         vermin: 'V16',
         font: '8c+',
@@ -726,7 +725,7 @@ export const grades: Array<Grade> = [
         ewbank: 38,
         brz: '12c',
         uiaa: 'XII',
-        uiaa_metric: 12.00,
-        watts: 6.50
-    }
+        uiaa_metric: 12.0,
+        watts: 6.5,
+    },
 ]

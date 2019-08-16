@@ -7,34 +7,52 @@ Gender, Vermin, Font, IRCRA, YDS, French/Sport, British, Tech, Ewbank, BRZ, UIAA
 ## Description
 Tiny Library for converting values between different climbing route grade systems.
 
-See examples directory for usage.
-
 ## Installation
 
 `npm install ircra`
 
 ## Usage
 
+Example
+
 ```js
 import IRCRA from 'ircra'
 
-const ircra = IRCRA()
-const test = ircra.load('yds', '5.3').to('vermin')
+const ircra = new IRCRA()
+const test = ircra.convert('yds', '5.3').to('vermin')
 
 console.log(test) // {"vermin":null}
 ```
 
 ### Methods
 
-`load`
+`get`
 
 ```js
 console.log(
-    IRCRA().load('yds', '5.3')
-)
+    new IRCRA().get('yds')
+) // [...]
 ```
 
-The load method generates an index for the chosen grade system, and returns a new object for that type.
+The get method generates an index for the chosen grade system, and returns a new object for that type. It takes an optional parameter of gradeSystem. If no argument is provided, all grades in all grade systems are returned.
+
+```js
+console.log(
+    new IRCRA().get()
+) // [{...}]
+```
+
+`convert`
+
+```js
+console.log(
+    new IRCRA().convert('yds', '5.1').to('vermin')
+) // {...}
+```
+
+The convert method takes two parameters. The gradeSystem and gradeValue. It returns an object with a `to` method that takes one parameter, the target gradeSystem.
+
+It will then return an object with the new gradeSystem value.
 
 ## Efficiency
 
