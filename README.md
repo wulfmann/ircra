@@ -41,3 +41,5 @@ The load method generates an index for the chosen grade system, and returns a ne
 Since this package loads the climbing grade version directly at runtime, attempts are made to make the queries / conversions more efficient.
 
 When you call `.load` with a type. An index (`Map`) is generated in memory, and used for the conversions to other types.
+
+The first `.load` call is benchmarked at around `.2ms`, but subsequent load/conversion calls come in at around `0.002ms`.
