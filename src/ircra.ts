@@ -4,9 +4,9 @@ import { grades } from './master'
 
 class Classification {
     index: Map<any, any>
-    grade: string
+    grade: string|number
 
-    constructor(index: Map<any, any>, grade: string) {
+    constructor(index: Map<any, any>, grade: string|number) {
         if (!grade) {
             throw new Error('grade is required')
         }
@@ -64,7 +64,7 @@ export default class IRCRA {
         }
     }
 
-    public convert(gradeType: string = '', grade: string = '') {
+    public convert(gradeType: string = '', grade: string|number = '') {
         if (gradeType in this.supportedTypes) {
             throw new Error(`${gradeType} is unsupported`)
         }
@@ -83,8 +83,15 @@ export default class IRCRA {
             if (!(key in grades[i])) {
                 throw new Error('no ' + key + ' key found in grade')
             }
+
+            if (['male', 'female'].includes(key)) {
+                map.set(grades[i][key].level, i)
+                continue
+            }
+            
             map.set(grades[i][key], i)
         }
+
         return map
     }
 }
