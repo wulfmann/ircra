@@ -4,6 +4,25 @@
 
 Gender, Vermin, Font, IRCRA, YDS, French/Sport, British, Tech, Ewbank, BRZ, UIAA, Metric UIAA, Watts
 
+### Grade System Types
+
+|name|type|
+|----|----|
+|male (level)|number|
+|female (level)|number|
+|vermin|string|
+|font|string|
+|ircra|number|
+|yds|string|
+|sport|string|
+|british|string|
+|tech|string|
+|ewbank|number|
+|brz|string|
+|uiaa|string|
+uiaa_metric|number|
+watts|number
+
 ## Description
 Tiny Library for converting values between different climbing route grade systems.
 
