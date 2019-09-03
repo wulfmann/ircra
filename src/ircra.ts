@@ -48,7 +48,7 @@ export default class IRCRA {
     public get(gradeType: string = '') {
         // All
         if (gradeType === '') {
-            return JSON.stringify(grades)
+            return grades
         }
 
         // Validation
@@ -58,9 +58,9 @@ export default class IRCRA {
 
         if (!this.maps.has(gradeType)) {
             let map = this.maps.set(gradeType, this._index(gradeType))
-            return JSON.stringify(Array.from(map.get(gradeType).keys()))
+            return Array.from(map.get(gradeType).keys())
         } else {
-            return JSON.stringify(Array.from(this.maps.get(gradeType).keys()))
+            return Array.from(this.maps.get(gradeType).keys())
         }
     }
 
