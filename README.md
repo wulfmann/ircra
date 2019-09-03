@@ -77,14 +77,6 @@ The convert method takes two parameters. The gradeSystem and gradeValue. It retu
 
 It will then return an object with the new gradeSystem value.
 
-## Efficiency
-
-Since this package loads the climbing grade version directly at runtime, attempts are made to make the queries / conversions more efficient.
-
-When you call `.get` with a type. An index (`Map`) is generated in memory, and used for the conversions to other types.
-
-The first `.get` call is benchmarked at around `.2ms`, but subsequent get/convert calls come in at around `0.002ms`.
-
 `scale`
 
 ```js
@@ -94,3 +86,11 @@ console.log(
 ```
 
 The scale method returns a list of possible scale values with human-readable values associated with their respective internal ids.
+
+## Efficiency
+
+Since this package loads the climbing grade version directly at runtime, attempts are made to make the queries / conversions more efficient.
+
+When you call `.get` with a type. An index (`Map`) is generated in memory, and used for the conversions to other types.
+
+The first `.get` call is benchmarked at around `.2ms`, but subsequent get/convert calls come in at around `0.002ms`.
