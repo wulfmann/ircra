@@ -44,7 +44,7 @@ import IRCRA from 'ircra'
 const ircra = new IRCRA()
 const test = ircra.convert('yds', '5.3').to('vermin')
 
-console.log(test) // {"vermin":null}
+console.log(test) // {vermin:null}
 ```
 
 ### Methods

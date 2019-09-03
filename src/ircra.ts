@@ -17,7 +17,7 @@ class Classification {
 
     public to(gradeType: string) {
         const result = grades[this.index.get(this.grade)][gradeType]
-        return JSON.stringify({ [gradeType]: result })
+        return { [gradeType]: result }
     }
 }
 
