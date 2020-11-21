@@ -101,7 +101,7 @@ export default class IRCRA {
             { name: 'Fontainebleau', value: 'font' },
             { name: 'IRCRA - Rock Climbing Association', value: 'ircra' },
             { name: 'YDS - Yosemite Decimal System', value: 'yds' },
-            { name: 'French', value: 'french' },
+            { name: 'French', value: 'sport' },
             { name: 'British - Adjectival', value: 'british' },
             { name: 'British - Technical', value: 'tech' },
             { name: 'Ewbank', value: 'ewbank' },
